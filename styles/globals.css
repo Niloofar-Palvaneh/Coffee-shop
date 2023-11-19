@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "iransansEOT";
+  src: url("./fonts/IRANSansWeb\(FaNum\).eot");
+}
+@font-face {
+  font-family: "iransansWOFF";
+  src: url("./fonts/IRANSansWeb\(FaNum\).woff");
+}
+@font-face {
+  font-family: "iransansWOFF2";
+  src: url("./fonts/IRANSansWeb\(FaNum\).woff2");
+}
+@font-face {
+  font-family: "iransansTTF";
+  src: url("./fonts/IRANSansWeb\(FaNum\).ttf");
+}
+
+body {
+  font-family: "iransansEOT" , "iransansWOFF" , "iransansWOFF2" , "iransansTTF";
+}
