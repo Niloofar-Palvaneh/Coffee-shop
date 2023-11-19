@@ -9,9 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "aos": "^2.3.4",
+    "next": "14.0.3",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.0.3"
+    "swiper": "^11.0.4"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",
