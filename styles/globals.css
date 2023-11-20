@@ -21,4 +21,5 @@
 
 body {
   font-family: "iransansEOT" , "iransansWOFF" , "iransansWOFF2" , "iransansTTF";
+  direction: rtl;
 }
