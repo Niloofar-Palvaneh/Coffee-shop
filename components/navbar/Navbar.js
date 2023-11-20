@@ -88,8 +88,8 @@ export default function Navbar() {
                     <ul
                         onClick={isShoMobileMenuHandler}
                         className={`${styles.custom_style} ${isShoMobileMenu ? "-left-[800px]" : "left-0"}
-                    flex items-center justify-center gap-12 flex-col font-bold text-xl
-                    backdrop-blur-sm fixed left-0 top-0 transition-all w-full h-[100vh]`}>
+                    flex items-center justify-center gap-12 flex-col font-bold text-xl z-40
+                     fixed left-0 top-0 transition-all w-full h-[100vh]`}>
                         {
                             links.map(link => (
                                 <li
