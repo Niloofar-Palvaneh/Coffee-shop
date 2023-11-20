@@ -3,17 +3,18 @@ import style from "./Header.module.css"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
+import Button from "../button/Button";
 
 export default function Header() {
     useEffect(() => {
         AOS.init({
             duration: 1200
         })
-      }, [])
+    }, [])
     return (
         <>
             <div className="flex justify-between items-center px-12 sm:px-0 xl:px-4 sm:flex-col sm:justify-center md:flex-col md:justify-center">
-                <div className="flex flex-col gap-24 relative">
+                <div className="flex flex-col gap-24 relative sm:gap-12 sm:px-2">
                     <div className="flex items-center gap-6 sm:justify-center sm:w-full md:justify-center md:w-full text-xl md:mt-12" data-aos="fade-left">
                         <h2>
                             برترین کافه خاورمیانه
@@ -24,6 +25,10 @@ export default function Header() {
                         <h3 className="text-[60px] font-bold sm:text-center sm:text-[40px]">
                             نوشیدنی انتخاب کنید که طعم شاهکاری دارد
                         </h3>
+
+                    </div>
+                    <div className="sm:flex sm:items-center sm:justify-center ">
+                        <Button />
                     </div>
                     <Image
                         className={`${style.object} absolute right-32 -bottom-24`}
@@ -56,12 +61,12 @@ export default function Header() {
                             className={`${style.object} absolute right-24`}
                             src={"/done.png"} width={100} height={100} />
                     </div>
-                        <h1 className="rotate-90 
+                    <h1 className="rotate-90 
                         sm:text-center sm:rotate-0 sm:p-2 sm:bg-yellow-500 sm:w-full
                         xl:text-center xl:rotate-0 xl:p-2 xl:bg-yellow-500 xl:w-full
                         absolute -left-[60px] sm:left-0 z-30 text-4xl font-bold">
-                    کافه هیولای وردپرس
-                        </h1>
+                        کافه هیولای وردپرس
+                    </h1>
                 </div>
             </div>
         </>
