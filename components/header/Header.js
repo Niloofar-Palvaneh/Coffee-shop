@@ -64,7 +64,7 @@ export default function Header() {
                     <h1 className="rotate-90 
                         sm:text-center sm:rotate-0 sm:p-2 sm:bg-yellow-500 sm:w-full
                         xl:text-center xl:rotate-0 xl:p-2 xl:bg-yellow-500 xl:w-full
-                        absolute -left-[60px] sm:left-0 z-30 text-4xl font-bold">
+                        absolute -left-[60px] md:left-0 xl:left-0 sm:left-0 z-30 text-4xl font-bold">
                         کافه هیولای وردپرس
                     </h1>
                 </div>
