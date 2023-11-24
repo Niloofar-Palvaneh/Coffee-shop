@@ -61,6 +61,7 @@ export default function singleCoffee() {
         },
     ]
     const newCoffees = servisesArry.filter(coffee => coffee.id === Number(router.query.id))
+    
     return (
         <>
             <div className="flex items-center justify-around">
