@@ -1,4 +1,5 @@
 import AboutUs from "@/components/aboutUs/AboutUs"
+import Customer from "@/components/customer/Customer"
 import Header from "@/components/header/Header"
 import Navbar from "@/components/navbar/Navbar"
 import Servises from "@/components/servises/Servises"
@@ -13,12 +14,10 @@ export default function Home() {
         <AboutUs />
         <SpecialCoffee />
         <Servises />
+        <Customer/>
       </div>
       <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
       <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-
     </>
   )
 }
