@@ -41,7 +41,7 @@ export default function AboutUs() {
                     </div>
                     <div className='w-full flex justify-center sm:justify-between sm:mt-8 '>
                         <Image
-                            className='ml-4 sm:ml-0'
+                            className='ml-4 sm:hidden'
                             src={"/man.png"} width={100} height={100} alt='...' />
                         <div className='sm:ml-0 ml-48'>
                             <Image

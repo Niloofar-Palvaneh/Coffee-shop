@@ -76,10 +76,10 @@ export default function Navbar() {
                     </ul>
                 </div>
 
-                <div className="hidden sm:block">
+                <div className="hidden sm:block ">
                     <div
                         onClick={isShoMobileMenuHandler}
-                        className="flex flex-col gap-1 ">
+                        className=" flex flex-col gap-1 z-50 ">
                         <div className={`z-50  w-[30px] h-[5px] bg-amber-900 rounded-full transition-all ${isShoMobileMenu ? "rotate-0" : "rotate-[137deg]"}`}></div>
                         <div className={`z-50  w-[30px] h-[5px] bg-amber-900 rounded-full ${isShoMobileMenu ? "inline" : "hidden"}`}></div>
                         <div className={`z-50  w-[30px] h-[5px] bg-amber-900 rounded-full ${isShoMobileMenu ? "rotate-0" : "rotate-45 -mt-[9px]"}`}></div>
@@ -89,7 +89,7 @@ export default function Navbar() {
                         onClick={isShoMobileMenuHandler}
                         className={`${styles.custom_style} ${isShoMobileMenu ? "-left-[800px]" : "left-0"}
                     flex items-center justify-center gap-12 flex-col font-bold text-xl z-40
-                     fixed left-0 top-0 transition-all w-full h-[100vh]`}>
+                     fixed  top-0 transition-all w-full h-[100vh]`}>
                         {
                             links.map(link => (
                                 <li
