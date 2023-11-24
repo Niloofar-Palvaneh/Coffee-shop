@@ -51,7 +51,7 @@ export default function SpecialCoffee() {
                                         coffee.des
                                     }
                                 </p>
-                                <Button />
+                                <Button link={"#"} />
                             </div>
                         ))
                     }

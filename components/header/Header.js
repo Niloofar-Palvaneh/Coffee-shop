@@ -28,7 +28,7 @@ export default function Header() {
 
                     </div>
                     <div className="sm:flex sm:items-center sm:justify-center ">
-                        <Button />
+                        <Button link={"/moreCoffee"} />
                     </div>
                     <Image
                         className={`${style.object} absolute right-32 -bottom-24`}
