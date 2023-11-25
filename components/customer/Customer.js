@@ -55,7 +55,7 @@ export default function Customer() {
                 >
                     {
                         customers.map(customer => (
-                            <SwiperSlide className={`bg-gray-100 border shadow-xl rounded relative p-4 `}>
+                            <SwiperSlide key={customer.name} className={`bg-gray-100 border shadow-xl rounded relative p-4 `}>
                                 <div className="absolute top-4 flex justify-end w-full left-8 sm:hidden">
                                     <Image
                                         src={"/c-bg.png"} width={80} height={80} alt="..." />

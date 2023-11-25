@@ -10,7 +10,7 @@ export default function Navbar() {
     const links = [
         {
             id: 1,
-            title: "درباره",
+            title: "خانه",
             pathName: "/",
             isActive: false
         },

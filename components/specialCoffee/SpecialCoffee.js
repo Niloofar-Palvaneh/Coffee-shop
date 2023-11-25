@@ -39,7 +39,7 @@ export default function SpecialCoffee() {
                 <div className="grid grid-cols-3 mt-48 gap-4 sm:grid-cols-1 sm:gap-8 sm:mt-8">
                     {
                         specialCoffeeArry.map(coffee => (
-                            <div data-aos="fade-up" className="bg-white flex flex-col items-center justify-center text-center gap-8 p-4">
+                            <div key={coffee.title} data-aos="fade-up" className="bg-white flex flex-col items-center justify-center text-center gap-8 p-4">
                                 <Image
                                     className="-mt-24 mb-12 sm:-mt-6"
                                     src={coffee.img} width={300} height={400} alt="..." />
