@@ -67,11 +67,11 @@ export default function singleCoffee() {
             <div className="flex items-center justify-around">
                 {
                     newCoffees.map(coffee => (
-                        <div className="flex flex-col gap-4 mt-8">
-                            <h1 className="text-xl mb-4 text-orange-800">
+                        <div className="flex flex-col gap-4 mt-8 w-max">
+                            <h1 className="text-xl mb-4 text-orange-800 p-2">
                                 اطلاعات بیشتر درمورد نوشیدنی {coffee.title}
                             </h1>
-                            <div className="group flex flex-col items-center justify-center border rounded shadow w-max">
+                            <div className="group flex flex-col items-center justify-center border rounded shadow">
                                 <Image
                                     className="group-hover:rotate-45 transition-all p-2"
                                     src={coffee.img} width={200} height={200} alt="..." />
@@ -79,7 +79,7 @@ export default function singleCoffee() {
                                     <h5 className="text-xl font-bold ">
                                         {coffee.title}
                                     </h5>
-                                    <p className=" p-4 text-center text-gray-700">
+                                    <p className=" p-4 text-center text-gray-700 ">
                                         {coffee.des}
                                     </p>
                                 </div>

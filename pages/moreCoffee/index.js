@@ -61,7 +61,7 @@ export default function MoreCoffee() {
     ]
     return (
         <>
-            <div className="mt-12">
+            <div className="mt-12 overflow-hidden">
                 <div className="w-full flex items-center justify-center">
                     <div className="w-1/2 flex flex-col gap-8 items-center justify-center text-center sm:w-full">
                         <div className="flex flex-col items-center justify-center gap-2">

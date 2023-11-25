@@ -1,7 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"
-import styles from "./Navbar.module.css"
 
 export default function Navbar() {
     const [activeLinkId, setActiveLinkId] = useState(1)
@@ -62,7 +61,7 @@ export default function Navbar() {
                                 </li>
                             ))
                         }
-                        <li className="">
+                        <li>
                             <svg
                                 onClick={isShowSearchBoxHandler}
                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 cursor-pointer">
@@ -87,9 +86,9 @@ export default function Navbar() {
 
                     <ul
                         onClick={isShoMobileMenuHandler}
-                        className={`${styles.custom_style} ${isShoMobileMenu ? "-left-[800px]" : "left-0"}
+                        className={`bg-orange-100 ${isShoMobileMenu ? "-left-[800px]" : "left-0"}
                     flex items-center justify-center gap-12 flex-col font-bold text-xl z-40
-                     fixed  top-0 transition-all w-full h-[100vh]`}>
+                     fixed top-0 transition-all w-full h-[100vh]`}>
                         {
                             links.map(link => (
                                 <li
