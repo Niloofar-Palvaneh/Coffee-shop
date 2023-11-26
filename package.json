@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
+    "formik": "^2.4.5",
     "next": "14.0.3",
     "react": "^18",
     "react-dom": "^18",

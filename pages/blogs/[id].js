@@ -68,7 +68,7 @@ export default function SingleCoffee() {
                 <div className="w-[50%] sm:w-[95%]">
                     {
                         singleBlog.map(item => (
-                            <div>
+                            <div key={item.id}>
                                 <Image 
                                 className="w-full"
                                 src={"/blog1.jpg"} width={300} height={300} alt="..." />

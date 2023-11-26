@@ -23,7 +23,7 @@ export default function Navbar() {
         {
             id: 3,
             title: "خبرنامه",
-            pathName: "/",
+            pathName: "/newsletters",
             isActive: false
         },
         {
