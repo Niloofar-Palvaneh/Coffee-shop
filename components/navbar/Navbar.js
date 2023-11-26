@@ -29,7 +29,7 @@ export default function Navbar() {
         {
             id: 4,
             title: "وبلاگ",
-            pathName: "/",
+            pathName: "/blogs",
             isActive: false
         }
     ]
