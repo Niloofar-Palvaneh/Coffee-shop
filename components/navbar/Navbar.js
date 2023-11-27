@@ -17,7 +17,7 @@ export default function Navbar() {
         {
             id: 2,
             title: "خدمات",
-            pathName: "/",
+            pathName: "/servises",
             isActive: false
         },
         {

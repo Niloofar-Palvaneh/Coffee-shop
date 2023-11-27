@@ -15,7 +15,7 @@ export default function Newsletters() {
                                 <input className="border shadow p-2 rounded outline-orange-300" type="text" name="firstName" />
                             </section>
                             <section className="flex flex-col gap-1">
-                                <label className="text-gray-700" htmlFor="lasttName">نام خانوادگی</label>
+                                <label className="text-gray-700" htmlFor="lastName">نام خانوادگی</label>
                                 <input className="border shadow p-2 rounded outline-orange-300" type="text" name="lastName" />
                             </section>
                         </div>
