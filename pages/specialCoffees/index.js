@@ -1,27 +1,52 @@
+import Button from "@/components/button/Button"
 import Image from "next/image"
-import Button from "../button/Button"
+import Link from "next/link"
 
-export default function SpecialCoffee() {
+export default function SpecialCoffees(){
+
     const specialCoffeeArry = [
         {
+            id:"1",
             title: " دانکین دونات گلوریا جینز",
             des: "دانه‌های قهوه خشک به درجات مختلف برشته می‌شوند، بسته به عطر و طعم مورد نظر ‌است",
             img : "/c-1.png"
         },
         {
+            id:"2",
             title: "کازینو کاستا استارباکس",
             des: "دانه‌های قهوه خشک به درجات مختلف برشته می‌شوند، بسته به عطر و طعم مورد نظر ‌است",
             img : "/c-2.png"
         },
         {
+            id:"3",
             title: "کازینو موکا السالوادور",
             des: "دانه‌های قهوه خشک به درجات مختلف برشته می‌شوند، بسته به عطر و طعم مورد نظر ‌است",
             img : "/c-3.png"
-        }
+        },
+        {
+            id:"4",
+            title: " دانکین دونات گلوریا جینز",
+            des: "دانه‌های قهوه خشک به درجات مختلف برشته می‌شوند، بسته به عطر و طعم مورد نظر ‌است",
+            img : "/c-1.png"
+        },
+        {
+            id:"5",
+            title: "کازینو کاستا استارباکس",
+            des: "دانه‌های قهوه خشک به درجات مختلف برشته می‌شوند، بسته به عطر و طعم مورد نظر ‌است",
+            img : "/c-2.png"
+        },
+        {
+            id:"6",
+            title: "کازینو موکا السالوادور",
+            des: "دانه‌های قهوه خشک به درجات مختلف برشته می‌شوند، بسته به عطر و طعم مورد نظر ‌است",
+            img : "/c-3.png"
+        },
     ]
-    return (
+
+
+    return(
         <>
-            <div className="bg-[url('/main-bg.png')] bg-no-repeat bg-center bg-orange-100 p-12 mt-12 sm:p-2">
+         <div className="bg-[url('/main-bg.png')] bg-no-repeat bg-center bg-orange-100 p-12 mt-12 sm:p-2">
                 <div className="w-full flex items-center justify-center">
                     <div className="w-1/2 flex flex-col gap-8 items-center justify-center text-center sm:w-full">
                         <div className="flex flex-col items-center justify-center gap-2">
@@ -36,7 +61,7 @@ export default function SpecialCoffee() {
                         </p>
                     </div>
                 </div>
-                <div className="grid grid-cols-3 mt-48 gap-4 sm:grid-cols-1 sm:gap-8 sm:mt-8">
+                <div className="grid grid-cols-3 mt-48 gap-48 sm:grid-cols-1 sm:gap-8 sm:mt-8">
                     {
                         specialCoffeeArry.map(coffee => (
                             <div key={coffee.title} data-aos="fade-up" className="bg-white flex flex-col items-center justify-center text-center gap-8 p-4">
@@ -51,7 +76,7 @@ export default function SpecialCoffee() {
                                         coffee.des
                                     }
                                 </p>
-                                <Button link={"/specialCoffees"} />
+                                <Button link={`/specialCoffees/${coffee.id}`} />
                             </div>
                         ))
                     }
