@@ -47,9 +47,11 @@ export default function Navbar() {
 
     return (
         <>
-            <div className="flex items-center justify-center">
+            <div className="flex items-center justify-center p-4">
                 <div className="flex items-center justify-between w-[90%] sticky top-0 overflow-hidden py-4">
-                    <Image src={"/logo.png"} width={100} height={100} alt="logo" />
+                    <Image
+                        className="rounded-full border shadow"
+                        src={"/logo.png"} width={100} height={100} alt="logo" />
                     <ul className="flex items-center gap-12 font-bold relative sm:hidden ">
                         {
                             links.map(link => (
@@ -76,6 +78,7 @@ export default function Navbar() {
                 </div>
 
                 <div className="hidden sm:block ">
+
                     <div
                         onClick={isShoMobileMenuHandler}
                         className=" flex flex-col gap-1 z-50 ">
@@ -83,12 +86,11 @@ export default function Navbar() {
                         <div className={`z-50  w-[30px] h-[5px] bg-amber-900 rounded-full ${isShoMobileMenu ? "inline" : "hidden"}`}></div>
                         <div className={`z-50  w-[30px] h-[5px] bg-amber-900 rounded-full ${isShoMobileMenu ? "rotate-0" : "rotate-45 -mt-[9px]"}`}></div>
                     </div>
-
                     <ul
                         onClick={isShoMobileMenuHandler}
                         className={`bg-orange-100 ${isShoMobileMenu ? "-left-[800px]" : "left-0"}
-                    flex items-center justify-center gap-12 flex-col font-bold text-xl z-40
-                     fixed top-0 transition-all w-full h-[100vh]`}>
+                            flex items-center justify-center gap-12 flex-col font-bold text-xl z-40 shadow-[0px_30px_10px_10px_#ffedd5]
+                            fixed top-0 transition-all w-full h-max py-8 `}>
                         {
                             links.map(link => (
                                 <li
@@ -101,7 +103,6 @@ export default function Navbar() {
                         }
                     </ul>
                 </div>
-
             </div>
         </>
     )
